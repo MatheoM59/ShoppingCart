@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Claviers",
+    "image": "https://www.surdiscount.com/68034-large_default/clavier-sans-fil-azerty-gaming-touches-retroeclairees-anti-ghosting-spirit-of-gamer.jpg",
+    "top": true
+  },
+  {
+    "id": 2,
+    "name": "Souris",
+    "image": "https://media.rueducommerce.fr/rd/products/b26/b26252e7f5ee0c18d8fe32a7abea63d18db23711.jpg",
+    "top": true
+  },
+  {
+    "id": 3,
+    "name": "Tapis",
+    "image": "https://maxesport.gg/medias/2024/04/X-raypad-Aqua-Control-II-Noir-XL-640x640.webp",
+    "top": false
+  },
+  {
+    "id": 4,
+    "name": "Casques",
+    "image": "https://www.electrodepot.fr/media/catalog/product/P973810.jpg",
+    "top": false
+  },
+  {
+    "id": 5,
+    "name": "Écrans",
+    "image": "https://www.electrodepot.fr/media/catalog/product/P973810.jpg",
+    "top": true
+  },
+  {
+    "id": 6,
+    "name": "Accessoires",
+    "image": "https://ergoa-officiel.fr/cdn/shop/files/Axis-Image1.jpg?v=1780507088&width=1200",
+    "top": false
+  },
+  {
+    "id": 7,
+    "name": "Chaises",
+    "image": "https://m.media-amazon.com/images/I/61AMH1caHhL._AC_SL1500_.jpg",
+    "top": false
+  },
+  {
+    "id": 8,
+    "name": "Bureaux",
+    "image": "https://fly.fr/wp-content/uploads/2024/05/gamer-bureau-1.jpg",
+    "top": false
+  },
+  {
+    "id": 9,
+    "name": "Éclairage",
+    "image": "https://images.unsplash.com/photo-1565636192335-14c46fa1120d?w=500&h=500&fit=crop",
+    "top": false
+  }
+]

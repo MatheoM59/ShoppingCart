@@ -1,0 +1,24 @@
+.link {
+  color: black;
+  text-decoration: none;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1px grey;
+  gap: 60%;
+}
+
+.title {
+  outline: solid 1px red;
+  width: 10%;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  align-items: center;
+  outline: solid 1px red;
+  width: 30%;
+}
