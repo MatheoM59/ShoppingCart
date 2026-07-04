@@ -16,26 +16,34 @@ export const Shop = ({ categorys }) => {
     categorySelected != undefined
       ? products.filter((c) => c.categoryId === categorySelected)
       : products;
-  const handleClick = () => {
-    setCategorySelected(2);
-  };
+
   return (
     <>
       <Header />
-      <button onClick={handleClick}>Click</button>
-      <select
-        value={categorySelected}
-        onChange={(e) => setCategorySelected(e.target.value)}
-      >
-        {categorysList.map((cat) => (
-          <option key={cat.id} value={cat.id}>
-            {cat.name}
-          </option>
-        ))}
-        <option value={undefined}>All</option>
-      </select>
+      <div className={styles.section}>
+        <h1 className={styles.title}>Boutique Gaming</h1>
 
-      <Items type={'shop'} data={data} />
+        <div className={styles.container}>
+          <select
+            value={categorySelected || ''}
+            onChange={(e) =>
+              setCategorySelected(
+                e.target.value ? parseInt(e.target.value) : undefined
+              )
+            }
+            className={styles.filterSelect}
+          >
+            <option value="">Toutes les catégories</option>
+            {categorysList.map((cat) => (
+              <option key={cat.id} value={cat.id}>
+                {cat.name}
+              </option>
+            ))}
+          </select>
+
+          <Items type={'shop'} data={data} />
+        </div>
+      </div>
     </>
   );
 };
