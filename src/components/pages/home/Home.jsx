@@ -2,11 +2,12 @@ import { Header } from '../../header/Header';
 import { Category } from './Category';
 import { Recommandations } from './Recommandations';
 import category from '../../../data/categories.json';
-export const Home = () => {
+export const Home = ({ cart, setCart }) => {
+  console.log(cart);
   return (
     <>
-      <Header categorys={category} />
-      <Recommandations />
+      <Header cart={cart} />
+      <Recommandations cart={cart} setCart={setCart} />
       <Category categorys={category} />
     </>
   );

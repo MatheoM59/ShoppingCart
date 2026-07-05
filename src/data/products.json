@@ -1,320 +1,320 @@
-﻿[
-    {
-        "id":  1,
-        "name":  "Clavier MÃ©canique RGB",
-        "category":  "Claviers",
-        "price":  89.99,
-        "image":  "https://images.unsplash.com/photo-1587829191301-41ec2b8ba23f?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Clavier mÃ©canique avec switches MX Red, rÃ©troÃ©clairage RGB customisable",
-        "specs":  [
-                      "Switches MX Red",
-                      "RGB Programmable",
-                      "Aluminium",
-                      "Connexion USB"
-                  ],
-        "rating":  4.5,
-        "categoryId":  1
-    },
-    {
-        "id":  2,
-        "name":  "Souris Gaming Razer",
-        "category":  "Souris",
-        "price":  69.99,
-        "image":  "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Souris gaming haute prÃ©cision avec capteur 16000 DPI",
-        "specs":  [
-                      "16000 DPI",
-                      "8 Boutons programmables",
-                      "Poids ajustable",
-                      "Fil tressÃ©"
-                  ],
-        "rating":  4.8,
-        "categoryId":  2
-    },
-    {
-        "id":  3,
-        "name":  "Tapis de Souris XL",
-        "category":  "Tapis",
-        "price":  34.99,
-        "image":  "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Tapis XXL pour souris et clavier avec surface optimisÃ©e",
-        "specs":  [
-                      "900x400mm",
-                      "Surface lisse",
-                      "Base antidÃ©rapante",
-                      "Bords renforcÃ©s"
-                  ],
-        "rating":  4.2,
-        "categoryId":  3
-    },
-    {
-        "id":  4,
-        "name":  "Casque Gaming HyperX Cloud",
-        "category":  "Casques",
-        "price":  99.99,
-        "image":  "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Casque gaming avec son surround 7.1 et microphone dÃ©tachable",
-        "specs":  [
-                      "Son 7.1 Surround",
-                      "Microphone dÃ©tachable",
-                      "Confortable 12h+",
-                      "Prise 3.5mm"
-                  ],
-        "rating":  4.7,
-        "categoryId":  4
-    },
-    {
-        "id":  5,
-        "name":  "Ã‰cran Gaming 144Hz",
-        "category":  "Ã‰crans",
-        "price":  249.99,
-        "image":  "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Ã‰cran 27\" Full HD 144Hz avec temps de rÃ©ponse 1ms",
-        "specs":  [
-                      "1920x1080",
-                      "144Hz",
-                      "1ms rÃ©ponse",
-                      "IPS Panel"
-                  ],
-        "rating":  4.9,
-        "categoryId":  5
-    },
-    {
-        "id":  6,
-        "name":  "Repose-poignet Gaming",
-        "category":  "Accessoires",
-        "price":  24.99,
-        "image":  "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Repose-poignet ergonomique en mousse mÃ©moire",
-        "specs":  [
-                      "Mousse mÃ©moire",
-                      "Ergonomique",
-                      "Dimensions universelles"
-                  ],
-        "rating":  3.8,
-        "categoryId":  6
-    },
-    {
-        "id":  7,
-        "name":  "Clavier Sans Fil Logitech",
-        "category":  "Claviers",
-        "price":  59.99,
-        "image":  "https://images.unsplash.com/photo-1587829191301-41ec2b8ba23f?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Clavier sans fil compact avec batterie 36 mois",
-        "specs":  [
-                      "Sans fil 2.4GHz",
-                      "Batterie 36 mois",
-                      "Ultra silencieux",
-                      "Design compact"
-                  ],
-        "rating":  4.4,
-        "categoryId":  1
-    },
-    {
-        "id":  8,
-        "name":  "Souris Verticale Ergonomique",
-        "category":  "Souris",
-        "price":  45.99,
-        "image":  "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Souris verticale pour rÃ©duire la fatigue des poignets",
-        "specs":  [
-                      "Design vertical",
-                      "6 Boutons",
-                      "Ergonomique",
-                      "Capteur 3200 DPI"
-                  ],
-        "rating":  4.1,
-        "categoryId":  2
-    },
-    {
-        "id":  9,
-        "name":  "Micro Gaming SteelSeries",
-        "category":  "Accessoires",
-        "price":  79.99,
-        "image":  "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Microphone USB avec suppression de bruit IA",
-        "specs":  [
-                      "Suppression bruit IA",
-                      "USB plug \u0026 play",
-                      "Bras articulÃ©",
-                      "Son cristallin"
-                  ],
-        "rating":  4.6,
-        "categoryId":  6
-    },
-    {
-        "id":  10,
-        "name":  "Support pour Moniteur",
-        "category":  "Accessoires",
-        "price":  39.99,
-        "image":  "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Support rehausseur pour Ã©cran avec rangement",
-        "specs":  [
-                      "Hauteur ajustable",
-                      "Support jusqu\u0027Ã  30kg",
-                      "Rangement intÃ©grÃ©"
-                  ],
-        "rating":  3.9,
-        "categoryId":  6
-    },
-    {
-        "id":  11,
-        "name":  "Chaise Gaming Pro",
-        "category":  "Chaises",
-        "price":  299.99,
-        "image":  "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Chaise gaming ergonomique avec support lombaire rÃ©glable",
-        "specs":  [
-                      "Cuir PU premium",
-                      "Support lombaire",
-                      "Inclinaison 180Â°",
-                      "Roulettes silencieuses"
-                  ],
-        "rating":  4.8,
-        "categoryId":  7
-    },
-    {
-        "id":  12,
-        "name":  "Bureau Gaming 160cm",
-        "category":  "Bureaux",
-        "price":  179.99,
-        "image":  "https://images.unsplash.com/photo-1593642532400-2682a8c6f66f?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Bureau gaming spacieux avec gestion des cÃ¢bles",
-        "specs":  [
-                      "160x60cm",
-                      "Acier et MDF",
-                      "Gestion cÃ¢bles",
-                      "Charge 50kg"
-                  ],
-        "rating":  4.5,
-        "categoryId":  8
-    },
-    {
-        "id":  13,
-        "name":  "Lampe LED Gaming RGB",
-        "category":  "Ã‰clairage",
-        "price":  54.99,
-        "image":  "https://images.unsplash.com/photo-1565636192335-14c46fa1120d?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Lampe LED RGB avec 16 millions de couleurs",
-        "specs":  [
-                      "16M couleurs",
-                      "ContrÃ´le app",
-                      "USB rechargeable",
-                      "Bras flexible"
-                  ],
-        "rating":  4.3,
-        "categoryId":  9
-    },
-    {
-        "id":  14,
-        "name":  "Refroidisseur Laptop Gaming",
-        "category":  "Accessoires",
-        "price":  44.99,
-        "image":  "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Refroidisseur avec 5 ventilateurs pour laptop gaming",
-        "specs":  [
-                      "5 Ventilateurs",
-                      "Jusqu\u0027Ã  17 pouces",
-                      "USB powered",
-                      "Anti-vibration"
-                  ],
-        "rating":  4.6,
-        "categoryId":  6
-    },
-    {
-        "id":  15,
-        "name":  "Ã‰cran Gaming 240Hz",
-        "category":  "Ã‰crans",
-        "price":  349.99,
-        "image":  "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Ã‰cran 24\" Full HD 240Hz pour esports",
-        "specs":  [
-                      "1920x1080",
-                      "240Hz",
-                      "0.5ms rÃ©ponse",
-                      "TN Panel"
-                  ],
-        "rating":  4.9,
-        "categoryId":  5
-    },
-    {
-        "id":  16,
-        "name":  "Casque Sans Fil SteelSeries",
-        "category":  "Casques",
-        "price":  149.99,
-        "image":  "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Casque sans fil gaming 2.4GHz avec batterie 24h",
-        "specs":  [
-                      "Sans fil 2.4GHz",
-                      "Batterie 24h",
-                      "Son 7.1",
-                      "Poids 279g"
-                  ],
-        "rating":  4.7,
-        "categoryId":  4
-    },
-    {
-        "id":  17,
-        "name":  "Clavier MÃ©canique Compacte",
-        "category":  "Claviers",
-        "price":  129.99,
-        "image":  "https://images.unsplash.com/photo-1587829191301-41ec2b8ba23f?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Clavier mÃ©canique 75% avec switches personnalisables",
-        "specs":  [
-                      "75% compact",
-                      "Switches Hot-swap",
-                      "RGB programmable",
-                      "Aluminium"
-                  ],
-        "rating":  4.4,
-        "categoryId":  1
-    },
-    {
-        "id":  18,
-        "name":  "Souris Gaming Filaire Corsair",
-        "category":  "Souris",
-        "price":  59.99,
-        "image":  "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Souris gaming lÃ©gÃ¨re avec capteur optique 18000 DPI",
-        "specs":  [
-                      "18000 DPI",
-                      "7 Boutons",
-                      "Poids 95g",
-                      "Prise USB"
-                  ],
-        "rating":  4.2,
-        "categoryId":  2
-    },
-    {
-        "id":  19,
-        "name":  "Tapis Gaming Chauffant",
-        "category":  "Tapis",
-        "price":  44.99,
-        "image":  "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Tapis de souris XXL avec zone de chauffe USB",
-        "specs":  [
-                      "1000x500mm",
-                      "Chauffe intÃ©grÃ©e",
-                      "USB powered",
-                      "Surface optimisÃ©e"
-                  ],
-        "rating":  4.5,
-        "categoryId":  3
-    },
-    {
-        "id":  20,
-        "name":  "Connecteur Dock Gaming",
-        "category":  "Accessoires",
-        "price":  89.99,
-        "image":  "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500\u0026h=500\u0026fit=crop",
-        "description":  "Dock USB-C avec 7 ports pour setup gaming",
-        "specs":  [
-                      "7 Ports USB",
-                      "Charge 100W",
-                      "Thunderbolt 3",
-                      "Aluminum"
-                  ],
-        "rating":  4.8,
-        "categoryId":  6
-    }
+[
+  {
+    "id": 1,
+    "name": "Clavier Mécanique RGB Elite",
+    "category": "Claviers",
+    "price": 129.99,
+    "image": "https://images.unsplash.com/photo-1587829191301-41ec2b8ba23f?w=500&h=500&fit=crop",
+    "description": "Clavier mécanique haute performance avec switches personnalisés",
+    "specs": [
+      "Switches Gateron PRO",
+      "RGB Per-Key",
+      "Boîtier ABS premium",
+      "Connexion USB-C"
+    ],
+    "rating": 4.7,
+    "categoryId": 1
+  },
+  {
+    "id": 2,
+    "name": "Souris Pro DPI Ultra",
+    "category": "Souris",
+    "price": 79.99,
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+    "description": "Souris gaming compétitive avec capteur optique avancé",
+    "specs": [
+      "25000 DPI",
+      "6 Boutons personnalisables",
+      "Poids 85g",
+      "Grips ergonomiques"
+    ],
+    "rating": 4.9,
+    "categoryId": 2
+  },
+  {
+    "id": 3,
+    "name": "Tapis Gaming Precision",
+    "category": "Tapis",
+    "price": 39.99,
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+    "description": "Tapis haute précision pour joueurs compétitifs",
+    "specs": [
+      "800x400mm",
+      "Surface speed control",
+      "Base caoutchouc naturel",
+      "Bords stitched"
+    ],
+    "rating": 4.6,
+    "categoryId": 3
+  },
+  {
+    "id": 4,
+    "name": "Casque Premium Noise Cancel",
+    "category": "Casques",
+    "price": 189.99,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
+    "description": "Casque gaming avec suppression active du bruit",
+    "specs": [
+      "ANC Technologie",
+      "Micro commutable",
+      "Confortable 15h+",
+      "Sans fil Bluetooth"
+    ],
+    "rating": 4.8,
+    "categoryId": 4
+  },
+  {
+    "id": 5,
+    "name": "Écran Gaming Curved 165Hz",
+    "category": "Écrans",
+    "price": 349.99,
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&h=500&fit=crop",
+    "description": "Écran 27\" incurvé avec taux de rafraîchissement ultra",
+    "specs": [
+      "2560x1440",
+      "165Hz",
+      "0.5ms réponse",
+      "VA Panel Curved"
+    ],
+    "rating": 4.9,
+    "categoryId": 5
+  },
+  {
+    "id": 6,
+    "name": "Support de Contrôleur Premium",
+    "category": "Accessoires",
+    "price": 29.99,
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+    "description": "Support ergonomique pour manettes gaming",
+    "specs": [
+      "Mousse haute densité",
+      "Rotation 360°",
+      "Support universel"
+    ],
+    "rating": 4.3,
+    "categoryId": 6
+  },
+  {
+    "id": 7,
+    "name": "Clavier Mécanique Ultra Compact",
+    "category": "Claviers",
+    "price": 99.99,
+    "image": "https://images.unsplash.com/photo-1587829191301-41ec2b8ba23f?w=500&h=500&fit=crop",
+    "description": "Clavier 60% minimaliste avec design portabilité",
+    "specs": [
+      "60% layout",
+      "Switches Brown clicky",
+      "Batterie 50h",
+      "Poids 400g"
+    ],
+    "rating": 4.5,
+    "categoryId": 1
+  },
+  {
+    "id": 8,
+    "name": "Souris Moba Prestige",
+    "category": "Souris",
+    "price": 55.99,
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+    "description": "Souris optimisée pour jeux MOBA et stratégie",
+    "specs": [
+      "Capteur 12000 DPI",
+      "12 Boutons latéraux",
+      "Design asymétrique",
+      "Câble tressé 2m"
+    ],
+    "rating": 4.4,
+    "categoryId": 2
+  },
+  {
+    "id": 9,
+    "name": "Micro Studio Broadcast",
+    "category": "Accessoires",
+    "price": 129.99,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
+    "description": "Microphone professionnel pour streaming et tournois",
+    "specs": [
+      "Suppression bruit AI+",
+      "USB 3.0",
+      "Bras magnétique",
+      "Filtre pop intégré"
+    ],
+    "rating": 4.7,
+    "categoryId": 6
+  },
+  {
+    "id": 10,
+    "name": "Support Monitor Double",
+    "category": "Accessoires",
+    "price": 59.99,
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&h=500&fit=crop",
+    "description": "Support pour deux moniteurs avec hauteur ajustable",
+    "specs": [
+      "Hauteur/Tilt ajustable",
+      "Support 2x30kg",
+      "Rangement trois étages"
+    ],
+    "rating": 4.5,
+    "categoryId": 6
+  },
+  {
+    "id": 11,
+    "name": "Chaise Esports Champion",
+    "category": "Chaises",
+    "price": 399.99,
+    "image": "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=500&h=500&fit=crop",
+    "description": "Chaise gaming professionnel équipe compétitive",
+    "specs": [
+      "Tissu mesh premium",
+      "Support dorso-lombaire 4D",
+      "Inclinaison 200°",
+      "Bases acier renforcé"
+    ],
+    "rating": 4.9,
+    "categoryId": 7
+  },
+  {
+    "id": 12,
+    "name": "Bureau Streaming 180cm",
+    "category": "Bureaux",
+    "price": 249.99,
+    "image": "https://images.unsplash.com/photo-1593642532400-2682a8c6f66f?w=500&h=500&fit=crop",
+    "description": "Bureau gaming spacieux pour setup complet de streamer",
+    "specs": [
+      "180x75cm",
+      "Acier tubulaire noir",
+      "Grommets câbles",
+      "Charge 75kg"
+    ],
+    "rating": 4.6,
+    "categoryId": 8
+  },
+  {
+    "id": 13,
+    "name": "Strip LED Ambiance 2m",
+    "category": "Éclairage",
+    "price": 49.99,
+    "image": "https://images.unsplash.com/photo-1565636192335-14c46fa1120d?w=500&h=500&fit=crop",
+    "description": "Ruban LED RGB pour ambiance gaming immersive",
+    "specs": [
+      "20M couleurs réelles",
+      "App mobile iOS/Android",
+      "Batterie rechargeable",
+      "Adhésif 3M double face"
+    ],
+    "rating": 4.4,
+    "categoryId": 9
+  },
+  {
+    "id": 14,
+    "name": "Refroidisseur Laptop Turbo",
+    "category": "Accessoires",
+    "price": 69.99,
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=500&fit=crop",
+    "description": "Refroidisseur advanced pour laptop gaming haute perf",
+    "specs": [
+      "7 Ventilateurs turbine",
+      "Jusqu'à 18 pouces",
+      "USB Type-C power",
+      "Silencieux 25dB"
+    ],
+    "rating": 4.8,
+    "categoryId": 6
+  },
+  {
+    "id": 15,
+    "name": "Écran Gaming 360Hz Elite",
+    "category": "Écrans",
+    "price": 599.99,
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&h=500&fit=crop",
+    "description": "Écran 24\" Full HD 360Hz pour esports compétitif",
+    "specs": [
+      "1920x1080",
+      "360Hz",
+      "0.3ms réponse",
+      "TN Panel premium"
+    ],
+    "rating": 5.0,
+    "categoryId": 5
+  },
+  {
+    "id": 16,
+    "name": "Casque Wireless Pro 2024",
+    "category": "Casques",
+    "price": 199.99,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
+    "description": "Casque gaming sans fil nouvelle génération 2024",
+    "specs": [
+      "Sans fil 2.4GHz WiFi",
+      "Batterie 40h autonomie",
+      "Son Surround 7.1+",
+      "Poids 250g ultralégère"
+    ],
+    "rating": 4.9,
+    "categoryId": 4
+  },
+  {
+    "id": 17,
+    "name": "Clavier Mécanique Alice Layout",
+    "category": "Claviers",
+    "price": 159.99,
+    "image": "https://images.unsplash.com/photo-1587829191301-41ec2b8ba23f?w=500&h=500&fit=crop",
+    "description": "Clavier ergonomique Alice avec design révolutionnaire",
+    "specs": [
+      "Alice layout",
+      "Switches Lube factory",
+      "RGB programmable",
+      "Boîtier polycarbonate"
+    ],
+    "rating": 4.6,
+    "categoryId": 1
+  },
+  {
+    "id": 18,
+    "name": "Souris FPS Compacte Pro",
+    "category": "Souris",
+    "price": 89.99,
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+    "description": "Souris ultra légère conçue pour FPS compétitif",
+    "specs": [
+      "20000 DPI capteur",
+      "5 Boutons seulement",
+      "Poids 60g ultra-light",
+      "Câble kevlar renforcé"
+    ],
+    "rating": 4.8,
+    "categoryId": 2
+  },
+  {
+    "id": 19,
+    "name": "Tapis Gaming Chauffant RGB",
+    "category": "Tapis",
+    "price": 64.99,
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+    "description": "Tapis XL avec chauffage intégré et LEDs RGB",
+    "specs": [
+      "1200x600mm extra large",
+      "Chauffage 3 niveaux",
+      "LEDs RGB sync",
+      "Surface tissu premium"
+    ],
+    "rating": 4.7,
+    "categoryId": 3
+  },
+  {
+    "id": 20,
+    "name": "Hub USB Gaming Titanium",
+    "category": "Accessoires",
+    "price": 119.99,
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=500&fit=crop",
+    "description": "Hub USB-C premium pour connecter tous vos périphériques",
+    "specs": [
+      "10 Ports USB 3.1",
+      "Charge 150W rapide",
+      "Thunderbolt 4 compatible",
+      "Chassis titanium anodisé"
+    ],
+    "rating": 4.6,
+    "categoryId": 6
+  }
 ]

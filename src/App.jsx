@@ -1,11 +1,13 @@
 import './App.css';
-import { Home } from './components/pages/home/Home';
+import { useState } from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router';
+import { createRoutes } from './route.jsx';
+
 function App() {
-  return (
-    <>
-      <Home />
-    </>
-  );
+  const [cart, setCart] = useState([]);
+  const router = createBrowserRouter(createRoutes(cart, setCart));
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;

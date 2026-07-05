@@ -5,7 +5,7 @@ import { useParams } from 'react-router';
 import { useState } from 'react';
 import styles from './styles/shop.module.css';
 
-export const Shop = ({ categorys }) => {
+export const Shop = ({ categorys, cart }) => {
   const { categoryId } = useParams();
   const [categorySelected, setCategorySelected] = useState(
     categoryId ? parseInt(categoryId) : undefined
@@ -19,7 +19,7 @@ export const Shop = ({ categorys }) => {
 
   return (
     <>
-      <Header />
+      <Header cart={cart} />
       <div className={styles.section}>
         <h1 className={styles.title}>Boutique Gaming</h1>
 

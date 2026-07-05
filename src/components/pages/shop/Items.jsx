@@ -1,15 +1,7 @@
 import styles from './styles/items.module.css';
-import { useState } from 'react';
-import { ProductCard } from './../../productCard/ProductCard';
+import { Link } from 'react-router';
 
 export const Items = ({ type, data }) => {
-  const [displayProduct, setDisplayProduct] = useState(false);
-  const [displayedProduct, setDisplayedProduct] = useState();
-  const handleClick = (produitId) => {
-    console.log('Click! produitId:', produitId); // ← Ajoute ça
-    setDisplayProduct(true);
-    setDisplayedProduct(produitId);
-  };
   if (type === 'shop') {
     return (
       <div>
@@ -24,19 +16,13 @@ export const Items = ({ type, data }) => {
               <div className={styles.shopProductInfo}>
                 <h3 className={styles.shopProductName}>{product.name}</h3>
                 <p className={styles.shopProductPrice}>{product.price}€</p>
-                <button
-                  className={styles.shopButton}
-                  onClick={() => handleClick(product.id)}
-                >
-                  Voir le produit
+                <button className={styles.shopButton}>
+                  <Link to={`/productCard/${product.id}`}>Voir le produit</Link>
                 </button>
               </div>
             </div>
           ))}
         </div>
-        {displayProduct && (
-          <ProductCard data={data} DisplayedProduct={displayedProduct} />
-        )}
       </div>
     );
   }
@@ -53,7 +39,9 @@ export const Items = ({ type, data }) => {
             <div className={styles.homeProductInfo}>
               <h3 className={styles.homeProductName}>{product.name}</h3>
               <p className={styles.homeProductPrice}>{product.price}€</p>
-              <button className={styles.homeButton}>Ajouter au panier</button>
+              <button className={styles.shopButton}>
+                <Link to={`/productCard/${product.id}`}>Voir le produit</Link>
+              </button>
             </div>
           </div>
         ))}
