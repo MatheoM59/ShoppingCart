@@ -20,81 +20,92 @@ export const Cart = ({ cart, setCart }) => {
   return (
     <>
       <Header cart={cart} />
-
-      <div className={styles.cart}>
-        <div className={styles.title}>
-          <h1>Panier</h1>
-          <p>({nbProducts} produits)</p>
+      {nbProducts === 0 && (
+        <div className={styles.empty}>
+          <h3>Aucun produit dans le panier !</h3>
+          <p>Voici nos recommandation</p>
         </div>
-        <div className={styles.content}>
-          <div className={styles.products}>
-            {product.map((item, index) => (
-              <div className={styles.product}>
-                <div className={styles.imgContainer}>
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className={styles.img}
-                  />
-                </div>
-                <div className={styles.info}>
-                  <Link to={`/productCard/${item.id}`}>
-                    <h4>{item.name}</h4>
-                  </Link>
-                  <div className={styles.quantity}>
-                    <select
-                      value={item.quantity}
-                      onChange={(e) => {
-                        cart.find((c) => c.id === item.id);
-                        setCart(
-                          cart.map((item, idx) =>
-                            idx === index
-                              ? { ...item, quantity: parseInt(e.target.value) }
-                              : item
-                          )
-                        );
-                      }}
-                      className={styles.filterSelect}
-                    >
-                      {quantity.map((qnt, index) => (
-                        <option key={qnt} value={qnt}>
-                          {index + 1}
-                        </option>
-                      ))}
-                    </select>
-                    <button
-                      onClick={() => {
-                        cart.find((c) => c.id === item.id);
-                        setCart(cart.filter((item, idx) => idx !== index));
-                      }}
-                    >
-                      <Trash2 />
-                    </button>
+      )}
+      {nbProducts > 0 && (
+        <div className={styles.cart}>
+          <div className={styles.title}>
+            <h1>Panier</h1>
+            <p>({nbProducts} produits)</p>
+          </div>
+          <div className={styles.content}>
+            <div className={styles.products}>
+              {product.map((item, index) => (
+                <div className={styles.product}>
+                  <div className={styles.imgContainer}>
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className={styles.img}
+                    />
+                  </div>
+                  <div className={styles.info}>
+                    <Link to={`/productCard/${item.id}`}>
+                      <h4>{item.name}</h4>
+                    </Link>
+                    <div className={styles.quantity}>
+                      <select
+                        value={item.quantity}
+                        onChange={(e) => {
+                          cart.find((c) => c.id === item.id);
+                          setCart(
+                            cart.map((item, idx) =>
+                              idx === index
+                                ? {
+                                    ...item,
+                                    quantity: parseInt(e.target.value),
+                                  }
+                                : item
+                            )
+                          );
+                        }}
+                        className={styles.filterSelect}
+                      >
+                        {quantity.map((qnt, index) => (
+                          <option key={qnt} value={qnt}>
+                            {index + 1}
+                          </option>
+                        ))}
+                      </select>
+                      <button
+                        onClick={() => {
+                          cart.find((c) => c.id === item.id);
+                          setCart(cart.filter((item, idx) => idx !== index));
+                        }}
+                      >
+                        <Trash2 />
+                      </button>
+                    </div>
+                  </div>
+                  <div className={styles.price}>
+                    <p>{item.price * item.quantity} €</p>
                   </div>
                 </div>
-                <div className={styles.price}>
-                  <p>{item.price * item.quantity} €</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className={styles.right}>
-            <div className={styles.valid}>
-              <button>Valider mon panier</button>
+              ))}
             </div>
-            <div className={styles.recap}>
-              <h3>Récapitulatif</h3>
-              <div className={styles.recapInfo}>
-                <p>Produit ({nbProducts})</p>
-                <div className={styles.totalPrice}>
-                  <h4>Total</h4>
-                  <p>{totalPrice} €</p>
+            <div className={styles.right}>
+              <div className={styles.valid}>
+                <button>Valider mon panier</button>
+              </div>
+              <div className={styles.recap}>
+                <h3>Récapitulatif</h3>
+                <div className={styles.recapInfo}>
+                  <p>Produit ({nbProducts})</p>
+                  <div className={styles.totalPrice}>
+                    <h4>Total</h4>
+                    <p>{totalPrice} €</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
+
       <Recommandations where={'cart'} cart={cart} setCart={setCart} />
     </>
   );

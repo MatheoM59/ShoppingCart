@@ -1,6 +1,17 @@
-.title {
-  padding: 40px 20px;
+.cart {
+  min-height: calc(100vh - 250px);
   background: var(--light);
+  border-bottom: solid 1px var(--border);
+}
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  padding: 20px 20px;
+  background: white;
   border-bottom: 2px solid var(--border);
 }
 
@@ -17,16 +28,18 @@
   margin: 0;
   margin-top: 8px;
 }
+
 .content {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 24px;
+  padding: 40px 20px;
 }
+
 .products {
   width: 50%;
-  padding:
-    0px,
-    40px 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -57,9 +70,10 @@
   justify-content: center;
   background: var(--light);
   border-radius: var(--radius);
+  overflow: hidden;
 }
 
-.imgContainer img {
+.img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -70,8 +84,12 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   min-width: 0;
+}
+
+.info a {
+  text-decoration: none;
 }
 
 .info h4 {
@@ -82,12 +100,17 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: var(--transition);
+}
+
+.info a:hover h4 {
+  color: var(--primary);
 }
 
 .quantity {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .filterSelect {
@@ -95,6 +118,7 @@
   border: 2px solid var(--border);
   border-radius: var(--radius);
   font-weight: 600;
+  font-size: 0.9rem;
   color: var(--text);
   background-color: white;
   cursor: pointer;
@@ -116,7 +140,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 8px;
+  padding: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,14 +152,12 @@
 .quantity button:hover {
   background: var(--light);
   color: #d32f2f;
+  transform: scale(1.1);
 }
 
 .price {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+  min-width: 100px;
   text-align: right;
-  white-space: nowrap;
 }
 
 .price p {
@@ -149,16 +171,78 @@
   color: var(--primary);
 }
 
-.price p:last-child {
-  font-size: 0.9rem;
-  color: var(--text-light);
-}
-
 .right {
+  width: 50%;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.valid {
+  background: white;
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.valid button {
+  width: 100%;
+  padding: 16px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.valid button:hover {
+  background: #e55a28;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.valid button:active {
+  transform: translateY(0);
+}
+
+.recap {
+  background: white;
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.recap h3 {
+  font-size: 1.3rem;
+  color: var(--dark);
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border);
+}
+
+.recap > div {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  outline: solid 1px red;
+  padding: 8px 0;
+}
+
+.recap p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.recap p:last-child {
+  font-weight: 600;
+  color: var(--dark);
 }
 
 @media (max-width: 768px) {
@@ -170,25 +254,29 @@
     font-size: 1.5rem;
   }
 
-  .products {
+  .content {
+    flex-direction: column;
     padding: 20px;
+    gap: 20px;
+  }
+
+  .products {
+    width: 100%;
   }
 
   .product {
     flex-direction: column;
-    text-align: center;
     gap: 16px;
   }
 
   .imgContainer {
-    width: 100%;
-    max-width: 200px;
-    height: 200px;
-    margin: 0 auto;
+    width: 150px;
+    height: 150px;
   }
 
   .info {
     width: 100%;
+    text-align: center;
   }
 
   .info h4 {
@@ -201,9 +289,11 @@
   }
 
   .price {
-    flex-direction: row;
-    justify-content: space-around;
+    width: 100%;
     text-align: center;
+  }
+
+  .right {
     width: 100%;
   }
 
