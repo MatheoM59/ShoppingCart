@@ -7,7 +7,7 @@ export const Home = ({ cart, setCart }) => {
   return (
     <>
       <Header cart={cart} />
-      <Recommandations cart={cart} setCart={setCart} />
+      <Recommandations where={'home'} cart={cart} setCart={setCart} />
       <Category categorys={category} />
     </>
   );
