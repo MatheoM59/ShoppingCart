@@ -214,11 +214,13 @@
   border-radius: var(--radius);
   padding: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.panier button {
+.addCart {
   width: 100%;
   padding: 14px 24px;
   background: var(--primary);
@@ -231,16 +233,39 @@
   transition: var(--transition);
 }
 
-.panier button:hover {
+.addCart:hover {
   background: #e55a28;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
 }
 
-.panier button:active {
+.addCart:active {
   transform: translateY(0);
 }
-
+.shopBtn {
+  width: 100%;
+  padding: 14px 24px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.cartBtn {
+  width: 100%;
+  padding: 14px 24px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
 @media (max-width: 768px) {
   .container {
     padding: 20px;

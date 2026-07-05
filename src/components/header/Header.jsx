@@ -6,7 +6,7 @@ export const Header = ({ cart }) => {
   return (
     <div className={styles.content}>
       <div className={styles.title}>
-        <Link to="/" className={styles.link}>
+        <Link to="/" className={styles.linkTitle}>
           <h1>Desk'Shop</h1>
         </Link>
       </div>

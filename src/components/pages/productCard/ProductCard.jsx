@@ -3,10 +3,12 @@ import { Header } from '../../header/Header';
 import { Link, useParams } from 'react-router';
 import products from '../../../data/products.json';
 import styles from './style/productCard.module.css';
+import { useState } from 'react';
 
 export const ProductCard = ({ cart, setCart }) => {
   const { productId } = useParams();
   const product = products.find((p) => p.id === parseInt(productId));
+  const [added, setAdded] = useState(false);
   const handleClick = () => {
     if (cart.find((c) => c.productId === parseInt(productId))) {
       setCart(
@@ -19,9 +21,9 @@ export const ProductCard = ({ cart, setCart }) => {
     } else {
       setCart([...cart, { productId: parseInt(productId), quantity: 1 }]);
     }
+    setAdded(true);
   };
 
-  console.log(cart[0]);
   return (
     <div className={styles.container}>
       <Header cart={cart} />
@@ -71,7 +73,25 @@ export const ProductCard = ({ cart, setCart }) => {
             </div>
           </div>
           <div className={styles.panier}>
-            <button onClick={handleClick}>Ajouter au panier</button>
+            {added === false && (
+              <button onClick={handleClick} className={styles.addCart}>
+                Ajouter au panier
+              </button>
+            )}
+            {added === true && (
+              <>
+                <button>
+                  <Link to={'/shop'} className={styles.shopBtn}>
+                    Continuer mes achats{' '}
+                  </Link>
+                </button>
+                <button>
+                  <Link to={'/cart'} className={styles.cartBtn}>
+                    Voir mon panier
+                  </Link>
+                </button>
+              </>
+            )}
           </div>
         </div>
       </div>
