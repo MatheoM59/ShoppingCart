@@ -11,11 +11,11 @@ export function createRoutes(cart, setCart) {
       element: <Home cart={cart} setCart={setCart} />,
     },
     {
-      path: 'shop/:categoryId',
+      path: '/shop/:categoryId',
       element: <Shop categorys={category} cart={cart} />,
     },
     {
-      path: 'shop',
+      path: '/shop',
       element: <Shop categorys={category} cart={cart} />,
     },
     {
@@ -23,7 +23,7 @@ export function createRoutes(cart, setCart) {
       element: <ProductCard cart={cart} setCart={setCart} />,
     },
     {
-      path: 'cart',
+      path: '/cart',
       element: <Cart cart={cart} setCart={setCart} />,
     },
   ];
