@@ -4,9 +4,7 @@ import { createRoutes } from './route.jsx';
 
 function App() {
   const [cart, setCart] = useState([]);
-  const router = createBrowserRouter(createRoutes(cart, setCart), {
-    basename: '/ShoppingCart/',
-  });
+  const router = createBrowserRouter(createRoutes(cart, setCart));
 
   return <RouterProvider router={router} />;
 }
